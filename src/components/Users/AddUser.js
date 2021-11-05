@@ -39,7 +39,8 @@ const AddUser = (props) => {
           type="text"
           value={enteredUsername}
           onChange={usernameChangeHandler}
-        />
+        />{" "}
+        <br />
         <label htmlFor="age"> Age (Years)</label>
         <input
           id="age"
