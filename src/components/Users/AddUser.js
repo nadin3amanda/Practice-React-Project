@@ -12,10 +12,11 @@ const AddUser = (props) => {
     if (enteredUsername.trim().length === 0 || enteredAge.trim().length === 0) {
       return;
     }
-    if (enteredAge < 1) {
+    if (+enteredAge < 1) {
+      //added plus to convert string into an integer since it is being compared to an integer
       return;
     }
-    
+
     console.log(enteredUsername, enteredAge);
     setEnteredUsername("");
     setEnteredAge("");
