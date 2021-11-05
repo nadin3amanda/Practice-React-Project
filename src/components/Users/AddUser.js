@@ -17,7 +17,7 @@ const AddUser = (props) => {
       return;
     }
 
-    console.log(enteredUsername, enteredAge);
+    props.onAddUser(enteredUsername, enteredAge);
     setEnteredUsername("");
     setEnteredAge("");
   };
@@ -50,7 +50,6 @@ const AddUser = (props) => {
         />
         <Button type="submit">Add User </Button>
       </form>
-      
     </Card>
   );
 };
