@@ -2,5 +2,12 @@
   background: #fff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   border-radius: 15px;
-
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 110px;
+  text-align: center;
+  line-height: 0.7rem;
+  fill-opacity: 0.2;
+  margin: auto;
 }
