@@ -18,6 +18,7 @@ function App() {
     <div>
       <AddUser onAddUser={addUserHandler}></AddUser>
       <UsersList users={usersList}></UsersList>
+      <br></br>
     </div>
   );
 }
