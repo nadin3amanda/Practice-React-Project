@@ -21,6 +21,7 @@
   background: #457b9d;
   padding: 1rem;
   text-transform: uppercase;
+  z-index: 2;
 }
 
 .header h2 {
@@ -37,8 +38,6 @@
   display: flex;
   justify-content: flex-end;
 }
-
-
 
 @media (min-width: 768px) {
   .modal {
