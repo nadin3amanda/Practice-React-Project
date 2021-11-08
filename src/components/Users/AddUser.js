@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import Card from "../UI/Card";
 import Button from "../UI/Button";
 import ErrorModal from "../UI/ErrorModal";
@@ -14,10 +15,8 @@ const AddUser = (props) => {
       return;
     }
     if (+enteredAge < 1) {
-      //added plus to convert string into an integer since it is being compared to an integer
       return;
     }
-
     props.onAddUser(enteredUsername, enteredAge);
     setEnteredUsername("");
     setEnteredAge("");
@@ -33,10 +32,7 @@ const AddUser = (props) => {
 
   return (
     <div>
-      <ErrorModal
-        title="Uh oh! An error occured!"
-        message="Something went wrong!"
-      ></ErrorModal>
+      <ErrorModal title="An error occured!" message="Sorry, something went wrong..." />
       <Card className={classes.input}>
         <form onSubmit={addUserHandler}>
           <label htmlFor="username">Username</label>
@@ -45,16 +41,15 @@ const AddUser = (props) => {
             type="text"
             value={enteredUsername}
             onChange={usernameChangeHandler}
-          />{" "}
-          <br />
-          <label htmlFor="age"> Age (Years)</label>
+          />
+          <label htmlFor="age">Age (Years)</label>
           <input
             id="age"
             type="number"
             value={enteredAge}
             onChange={ageChangeHandler}
           />
-          <Button type="submit">Add User </Button>
+          <Button type="submit">Add User</Button>
         </form>
       </Card>
     </div>
