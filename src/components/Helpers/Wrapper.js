@@ -1,7 +1,5 @@
-import React from "react";
-
-const Wrapper props => {
+const Wrapper = props => {
     return props.children;
-};
-
-export default Wrapper;
+  };
+  
+  export default Wrapper;
