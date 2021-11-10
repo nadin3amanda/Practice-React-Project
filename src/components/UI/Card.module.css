@@ -20,3 +20,8 @@
   align-content: center;
   line-height: 19px;
 }
+
+.users li {
+  list-style-type: none;
+  padding: 1rem;
+}
